@@ -15,7 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.l3s.boilerpipe.filters.english;
+package de.l3s.boilerpipe.filters.chinese;
+
+import java.util.regex.*;
 
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
@@ -28,16 +30,18 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  * marks them with {@link DefaultLabels#INDICATES_END_OF_TEXT}. This can be used
  * in conjunction with a downstream {@link IgnoreBlocksAfterContentFilter}.
  * 
- * @author Christian Kohlschütter
+ * @author nkzhenhua@gmail.com
  * @see IgnoreBlocksAfterContentFilter
  */
-public class TerminatingBlocksFinder implements BoilerpipeFilter {
-	public static final TerminatingBlocksFinder INSTANCE = new TerminatingBlocksFinder();
+public class ChineseTerminatingBlocksFinder implements BoilerpipeFilter {
+	public static final ChineseTerminatingBlocksFinder INSTANCE = new ChineseTerminatingBlocksFinder();
+	Pattern pattern = Pattern.compile("((正文|内容|文章).{0,4}(end|结束))|欢迎发表评论|分享(到)?|相关阅读|的热评日志|(进行|发表)评论");
+
 
 	/**
-	 * Returns the singleton instance for TerminatingBlocksFinder.
+	 * Returns the singleton instance for ChineseTerminatingBlocksFinder.
 	 */
-	public static TerminatingBlocksFinder getInstance() {
+	public static ChineseTerminatingBlocksFinder getInstance() {
 		return INSTANCE;
 	}
 
@@ -46,15 +50,33 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
 	public boolean process(TextDocument doc)
 			throws BoilerpipeProcessingException {
 		boolean changes = false;
-
-		// long t = System.currentTimeMillis();
-
+		
+		boolean end_of_content=false;
 		for (TextBlock tb : doc.getTextBlocks()) {
+			if( tb.getBlocktype() == 1)
+			{
+				final String ext_text = tb.getExtText().toLowerCase().trim();
+				if( ext_text.length()> 3 && ext_text.length()<20)
+				{
+					Matcher mt= pattern.matcher(ext_text);
+					if( mt.find())
+					{
+						end_of_content=true;
+					}
+				}
+				continue;
+			}
+			if( end_of_content)
+			{
+				tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
+				changes=true;
+				continue;
+			}
 			final int numWords = tb.getNumWords();
 			if (numWords < 15) {
 				final String text = tb.getText().trim();
 				final int len = text.length();
-				if (len >= 8) {
+				if (len >= 3) {
 					final String textLC = text.toLowerCase();
 					if (textLC.startsWith("comments")
 							|| startsWithNumber(textLC, len, " comments",
@@ -69,8 +91,12 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
 							|| textLC.contains("have your say")
 							|| textLC.contains("reader comments")
 							|| textLC.contains("rätta artikeln")
-							|| textLC
-									.equals("thanks for your comments - this feedback is now closed")) {
+							|| textLC.equals("thanks for your comments - this feedback is now closed")
+							|| textLC.startsWith("分享到")
+							|| textLC.startsWith("相关阅读")
+							|| textLC.contains("的热评日志")
+							|| textLC.contains("发表评论")
+							) {
 						tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
 						changes = true;
 					}

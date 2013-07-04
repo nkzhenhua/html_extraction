@@ -33,7 +33,7 @@ import java.util.regex.*;
  */
 public class ChineseContentBlocksFinder implements BoilerpipeFilter {
 	public static final ChineseContentBlocksFinder INSTANCE = new ChineseContentBlocksFinder();
-	private static final Pattern pattern_start = Pattern.compile("(正文|文章|内容)(.{0,8})(begin|开始|start)");
+	private static final Pattern pattern_start = Pattern.compile("((正文|文章|内容).{0,4}(begin|开始|start))");
 
 	/**
 	 * Returns the singleton instance for ChineseContentBlocksFinder.
@@ -44,9 +44,7 @@ public class ChineseContentBlocksFinder implements BoilerpipeFilter {
 
 	public static void main(String argv[])
 	{
-		String str="内容    begin";
-		str=str.toLowerCase().trim();
-		if(ChineseContentBlocksFinder.getInstance().content_end(str))
+		if(ChineseContentBlocksFinder.getInstance().content_end("正文内容 begin"))
 		{
 			System.out.println("find it");
 		}else
@@ -56,7 +54,7 @@ public class ChineseContentBlocksFinder implements BoilerpipeFilter {
 	}
 	public boolean content_end(String exttext)
 	{
-		if( exttext.length() > 3 && exttext.length()<15)
+		if( exttext.length() > 3 && exttext.length()<10)
 		{
 			if( exttext.equals("正文")|| exttext.equals("正文内容"))
 			{
