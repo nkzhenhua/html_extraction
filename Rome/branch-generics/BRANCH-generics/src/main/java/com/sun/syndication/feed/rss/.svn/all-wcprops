@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss
+END
+Enclosure.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Enclosure.java
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Source.java
+END
+Image.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Image.java
+END
+Description.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Description.java
+END
+TextInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/TextInput.java
+END
+Cloud.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Cloud.java
+END
+Channel.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Channel.java
+END
+Guid.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Guid.java
+END
+Content.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Content.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Category.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/feed/rss/Item.java
+END

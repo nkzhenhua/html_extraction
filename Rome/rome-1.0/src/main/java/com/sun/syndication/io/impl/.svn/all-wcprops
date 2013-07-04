@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/59/ROME/trunk/src/main/java/com/sun/syndication/io/impl
+END
+RSS091NetscapeParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS091NetscapeParser.java
+END
+FeedParsers.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/FeedParsers.java
+END
+NumberParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/NumberParser.java
+END
+SyModuleGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/SyModuleGenerator.java
+END
+Atom03Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/Atom03Generator.java
+END
+RSS091UserlandParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS091UserlandParser.java
+END
+Atom10Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/Atom10Parser.java
+END
+RSS20wNSParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS20wNSParser.java
+END
+ModuleGenerators.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/ModuleGenerators.java
+END
+RSS20Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS20Generator.java
+END
+RSS093Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS093Parser.java
+END
+XmlFixerReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/59/ROME/trunk/src/main/java/com/sun/syndication/io/impl/XmlFixerReader.java
+END
+FeedGenerators.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/FeedGenerators.java
+END
+BaseWireFeedParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/BaseWireFeedParser.java
+END
+DCModuleGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/DCModuleGenerator.java
+END
+RSS091UserlandGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS091UserlandGenerator.java
+END
+RSS090Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS090Generator.java
+END
+Atom10Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/Atom10Generator.java
+END
+RSS092Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS092Generator.java
+END
+DCModuleParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/DCModuleParser.java
+END
+RSS093Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS093Generator.java
+END
+RSS094Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS094Generator.java
+END
+RSS090Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS090Parser.java
+END
+SyModuleParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/SyModuleParser.java
+END
+RSS10Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS10Generator.java
+END
+RSS092Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS092Parser.java
+END
+Atom03Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/Atom03Parser.java
+END
+RSS094Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS094Parser.java
+END
+PropertiesLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/PropertiesLoader.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/Base64.java
+END
+RSS10Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS10Parser.java
+END
+ModuleParsers.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/ModuleParsers.java
+END
+RSS20Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS20Parser.java
+END
+PluginManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/PluginManager.java
+END
+DateParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/DateParser.java
+END
+RSS091NetscapeGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/RSS091NetscapeGenerator.java
+END
+BaseWireFeedGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/49/ROME/trunk/src/main/java/com/sun/syndication/io/impl/BaseWireFeedGenerator.java
+END

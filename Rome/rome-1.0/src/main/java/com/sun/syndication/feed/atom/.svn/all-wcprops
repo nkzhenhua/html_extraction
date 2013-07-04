@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/66/ROME/trunk/src/main/java/com/sun/syndication/feed/atom
+END
+Entry.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/66/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Entry.java
+END
+Feed.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Feed.java
+END
+Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Generator.java
+END
+Person.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Person.java
+END
+Content.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Content.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Category.java
+END
+Link.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/atom/Link.java
+END

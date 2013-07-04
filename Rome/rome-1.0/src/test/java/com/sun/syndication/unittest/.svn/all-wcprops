@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/56/ROME/trunk/src/test/java/com/sun/syndication/unittest
+END
+TestSyndFeedRSS091N.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS091N.java
+END
+TestSyndFeedAtom10prefix.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom10prefix.java
+END
+TestSyndFeedRSS10DCSyModules.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS10DCSyModules.java
+END
+TestOpsRSS091U.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS091U.java
+END
+TestSyndFeedRSS10DCMulti.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS10DCMulti.java
+END
+TestXmlFixerReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestXmlFixerReader.java
+END
+TestSyndFeedRSS090.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS090.java
+END
+TestOpsAtom10.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsAtom10.java
+END
+TestSyndFeedRSS092.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS092.java
+END
+TestSyndFeedAtom10b.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom10b.java
+END
+TestSyndFeedAtom10Ruby.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom10Ruby.java
+END
+TestSyndFeedAtom03.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom03.java
+END
+FeedOpsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/FeedOpsTest.java
+END
+TestOpsRSS093.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS093.java
+END
+TestSyndFeedRSS094.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/55/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS094.java
+END
+TestSyndFeedRSS10.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS10.java
+END
+TestSyndFeedRSS20.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS20.java
+END
+TestSyndFeedAtom10Bray.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom10Bray.java
+END
+TestSyndFeedAtom03DCSyModules.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom03DCSyModules.java
+END
+SyndFeedTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/SyndFeedTest.java
+END
+TestOpsRSS091N.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS091N.java
+END
+FeedTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/FeedTest.java
+END
+TestSyndFeedRSS091U.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS091U.java
+END
+TestEqualsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestEqualsBean.java
+END
+TestOpsRSS090.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS090.java
+END
+TestSyndFeedAtom10.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedAtom10.java
+END
+TestXmlReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestXmlReader.java
+END
+TestBase64.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestBase64.java
+END
+TestOpsRSS092.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS092.java
+END
+TestSyndFeedRSS093.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS093.java
+END
+TestSyndFeedRSS092Alt.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestSyndFeedRSS092Alt.java
+END
+TestOpsAtom03.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsAtom03.java
+END
+TestOpsRSS094.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS094.java
+END
+TestDateParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestDateParser.java
+END
+TestOpsRSS10.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS10.java
+END
+TestOpsRSS20.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestOpsRSS20.java
+END
+TestAtomContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/49/ROME/trunk/src/test/java/com/sun/syndication/unittest/TestAtomContent.java
+END

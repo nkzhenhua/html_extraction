@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss
+END
+Enclosure.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Enclosure.java
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Source.java
+END
+Image.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Image.java
+END
+Description.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Description.java
+END
+TextInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/TextInput.java
+END
+Cloud.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Cloud.java
+END
+Channel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Channel.java
+END
+Guid.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Guid.java
+END
+Content.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Content.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Category.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/55/ROME/trunk/src/main/java/com/sun/syndication/feed/rss/Item.java
+END

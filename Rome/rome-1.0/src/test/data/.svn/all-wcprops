@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/49/ROME/trunk/src/test/data
+END
+rss_0.93.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.93.xml
+END
+atom_0.3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_0.3.xml
+END
+rss_0.94.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.94.xml
+END
+rss_1.0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_1.0.xml
+END
+rss_2.0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_2.0.xml
+END
+atom_1.0_prefix.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_1.0_prefix.xml
+END
+atom_1.0_bray.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_1.0_bray.xml
+END
+rss_0.91N.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.91N.xml
+END
+rss_0.9.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.9.xml
+END
+atom_0.3_DC_Sy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_0.3_DC_Sy.xml
+END
+rss_0.91U.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.91U.xml
+END
+rss_1.0_DC_multi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_1.0_DC_multi.xml
+END
+rss_1.0_DC_Sy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_1.0_DC_Sy.xml
+END
+atom_1.0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_1.0.xml
+END
+rss_0.92_alt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.92_alt.xml
+END
+rss_0.92.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/49/ROME/trunk/src/test/data/rss_0.92.xml
+END
+atom_1.0_ruby.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_1.0_ruby.xml
+END
+atom_1.0_b.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/49/ROME/trunk/src/test/data/atom_1.0_b.xml
+END

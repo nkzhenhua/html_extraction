@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/107/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io
+END
+WireFeedGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/107/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/WireFeedGenerator.java
+END
+XmlReaderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/XmlReaderException.java
+END
+SAXBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/SAXBuilder.java
+END
+ModuleParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/107/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/ModuleParser.java
+END
+ParsingFeedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/ParsingFeedException.java
+END
+WireFeedParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/107/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/WireFeedParser.java
+END
+WireFeedInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/WireFeedInput.java
+END
+WireFeedOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/WireFeedOutput.java
+END
+DelegatingModuleGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/DelegatingModuleGenerator.java
+END
+SyndFeedInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/SyndFeedInput.java
+END
+SyndFeedOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/106/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/SyndFeedOutput.java
+END
+FeedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/FeedException.java
+END
+XmlReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/XmlReader.java
+END
+DelegatingModuleParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/101/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/DelegatingModuleParser.java
+END
+ModuleGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/107/ROME/branches/BRANCH-generics/src/main/java/com/sun/syndication/io/ModuleGenerator.java
+END
