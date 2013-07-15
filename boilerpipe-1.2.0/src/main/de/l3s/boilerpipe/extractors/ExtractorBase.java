@@ -38,6 +38,7 @@ import de.l3s.boilerpipe.sax.HTMLFetcher;
  * @author Christian Kohlschütter
  */
 public abstract class ExtractorBase implements BoilerpipeExtractor {
+	public TextDocument document=null ;
     
     /**
      * Extracts text from the HTML code given as a String.
@@ -56,6 +57,17 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
         }
     }
 
+    public String getHtmlText(final String html)
+            throws BoilerpipeProcessingException {
+        try {
+            return getHtmlText(new BoilerpipeSAXInput(new InputSource(
+                    new StringReader(html))).getTextDocument());
+        } catch (SAXException e) {
+            throw new BoilerpipeProcessingException(e);
+        }
+    }
+
+
     /**
      * Extracts text from the HTML code available from the given {@link InputSource}.
      * 
@@ -67,6 +79,14 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
             throws BoilerpipeProcessingException {
         try {
             return getText(new BoilerpipeSAXInput(is).getTextDocument());
+        } catch (SAXException e) {
+            throw new BoilerpipeProcessingException(e);
+        }
+    }
+    public String getHtmlText(final InputSource is)
+            throws BoilerpipeProcessingException {
+        try {
+            return getHtmlText(new BoilerpipeSAXInput(is).getTextDocument());
         } catch (SAXException e) {
             throw new BoilerpipeProcessingException(e);
         }
@@ -89,6 +109,13 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
             throw new BoilerpipeProcessingException(e);
         }
     }
+    public String getHtmlText(final URL url) throws BoilerpipeProcessingException {
+        try {
+        	return getHtmlText(HTMLFetcher.fetch(url).toInputSource());
+        } catch (IOException e) {
+            throw new BoilerpipeProcessingException(e);
+        }
+    }
 
     /**
      * Extracts text from the HTML code available from the given {@link Reader}.
@@ -99,6 +126,9 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
      */
     public String getText(final Reader r) throws BoilerpipeProcessingException {
         return getText(new InputSource(r));
+    }
+    public String getHtmlText(final Reader r) throws BoilerpipeProcessingException {
+        return getHtmlText(new InputSource(r));
     }
 
     /**
@@ -111,6 +141,18 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
     public String getText(TextDocument doc)
             throws BoilerpipeProcessingException {
         process(doc);
+        document = doc;
         return doc.getContent();
     }    
+    public String getHtmlText(TextDocument doc)
+            throws BoilerpipeProcessingException {
+        process(doc);
+        document = doc;
+        return doc.getHtmlText(true,false);
+    } 
+    public TextDocument getDoc()
+    {
+    	return document;
+    }
+
 }

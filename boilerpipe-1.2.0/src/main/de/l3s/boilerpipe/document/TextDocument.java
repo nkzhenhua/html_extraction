@@ -18,6 +18,7 @@
 package de.l3s.boilerpipe.document;
 
 import java.util.List;
+import java.util.*;
 
 /**
  * A text document, consisting of one or more {@link TextBlock}s.
@@ -27,7 +28,46 @@ import java.util.List;
 public class TextDocument {
     final List<TextBlock> textBlocks;
     String title;
-
+    
+    //record the rules used on this Document
+    HashSet<String> doc_labels=new HashSet<String>();
+    
+    //resource in this Document refered
+    HashMap<String,String> act_resource = new HashMap<String,String>();
+    
+    /**
+     * get the resource map
+     */
+    public HashMap<String,String> getAllResource()
+    {
+    	return act_resource;
+    }
+    public String getOneResource(String name)
+    {
+    	return act_resource.get(name);
+    }
+    
+    public void setResourceMap(HashMap<String,String> hm)
+    {
+    	act_resource=hm;
+    }
+    public void addOneResource(String name, String value)
+    {
+    	act_resource.put(name, value);
+    }
+    
+    /**
+     * set the lable
+     */
+    public void setDocLabel(String s)
+    {
+    	doc_labels.add(s);
+    }
+    
+    public boolean contansLabel(String s)
+    {
+    	return doc_labels.contains(s);
+    }
     /**
      * Creates a new {@link TextDocument} with given {@link TextBlock}s, and no
      * title.
@@ -51,6 +91,24 @@ public class TextDocument {
     public TextDocument(final String title, final List<TextBlock> textBlocks) {
         this.title = title;
         this.textBlocks = textBlocks;
+    }
+    public TextDocument(final String title, final List<TextBlock> textBlocks, final HashMap<String,String> res) {
+        this.title = title;
+        this.textBlocks = textBlocks;
+        this.act_resource=res;
+    }
+    public void generateResource()
+    {
+    	for( TextBlock bt : textBlocks)
+    	{
+    		if(bt.resource.size() > 0 && bt.isContent())
+    		{
+    			for(String rname: bt.getResouce().keySet())
+    			{
+    				act_resource.put(rname, bt.getResouce().get(rname));
+    			}
+    		}
+    	}
     }
 
     /**
@@ -90,7 +148,34 @@ public class TextDocument {
         return getText(true, false);
     }
 
-    
+    /**
+     * return the content contains html tag
+     */
+    public String getHtmlText(boolean includeContent, boolean includeNonContent) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>")
+        .append(getTitle()).append("</title></head><body>");
+        LOOP: for (TextBlock block : getTextBlocks()) {
+            if(block.isContent()) {
+                if(!includeContent) {
+                    continue LOOP;
+                }
+            } else {
+                if(!includeNonContent) {
+                    continue LOOP;
+                }
+            }
+            if( block.getText().trim().length() > 1)
+            {
+            sb.append("<p>");
+            sb.append(block.getText());
+            sb.append("</p>");
+            }
+        }
+        sb.append("</body></html>");
+        return sb.toString();
+    }
+
     /**
      * Returns the {@link TextDocument}'s content, non-content or both
      * 

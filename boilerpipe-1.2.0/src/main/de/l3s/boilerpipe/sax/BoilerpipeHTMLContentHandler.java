@@ -22,6 +22,7 @@ import java.util.BitSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.*;
 import java.util.regex.Pattern;
 
 import org.xml.sax.Attributes;
@@ -50,6 +51,8 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
 	StringBuilder tokenBuffer = new StringBuilder();
 	StringBuilder textBuffer = new StringBuilder();
+	
+	HashMap<String,String> resource = new HashMap<String,String>();
 
 	int inBody = 0;
 	int inAnchor = 0;
@@ -147,7 +150,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 	{
 		flushBlock();
 		flush=false;
-		TextBlock tb = new TextBlock(comment.trim(),1);
+		TextBlock tb = new TextBlock(comment.trim(),TextBlock.block_type_comment);
 		offsetBlocks++;
 		tb.setTagLevel(blockTagLevel);
 		addTextBlock(tb);
@@ -311,7 +314,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 		if (inBody == 0) {
 			
 			if ("TITLE".equalsIgnoreCase(lastStartTag) && !"TITLE".equalsIgnoreCase(lastEndTag) && inBody == 0) {
-				appendTitle(tokenBuffer.toString().trim());
+				appendTitle(textBuffer.toString().trim());
 			}
 			textBuffer.setLength(0);
 			tokenBuffer.setLength(0);
@@ -386,6 +389,11 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 		TextBlock tb = new TextBlock(textBuffer.toString().trim(),
 				currentContainedTextElements, numWords, numLinkedWords,
 				numWordsInWrappedLines, numWrappedLines, offsetBlocks);
+		if( resource.size() > 0)
+		{
+			tb.setResource(resource);
+			resource=new HashMap<String,String>();
+		}
 		currentContainedTextElements = new BitSet();
 
 		offsetBlocks++;

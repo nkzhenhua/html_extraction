@@ -36,4 +36,5 @@ public interface TagAction {
 			final String localName, final String qName) throws SAXException;
 	
 	boolean changesTagLevel();
+	public static int count=0;
 }

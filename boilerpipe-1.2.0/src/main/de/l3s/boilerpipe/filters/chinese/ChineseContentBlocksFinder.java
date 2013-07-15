@@ -33,7 +33,7 @@ import java.util.regex.*;
  */
 public class ChineseContentBlocksFinder implements BoilerpipeFilter {
 	public static final ChineseContentBlocksFinder INSTANCE = new ChineseContentBlocksFinder();
-	private static final Pattern pattern_start = Pattern.compile("(正文|文章|内容)(.{0,8})(begin|开始|start)");
+	private static final Pattern pattern_start = Pattern.compile("(正文|文章|内容)(.{0,4})(begin|开始|start)");
 
 	/**
 	 * Returns the singleton instance for ChineseContentBlocksFinder.
@@ -56,11 +56,15 @@ public class ChineseContentBlocksFinder implements BoilerpipeFilter {
 	}
 	public boolean content_end(String exttext)
 	{
-		if( exttext.length() > 3 && exttext.length()<15)
+		if( exttext.length() > 3 && exttext.length()<13)
 		{
 			if( exttext.equals("正文")|| exttext.equals("正文内容"))
 			{
 				return true;
+			}
+			if( exttext.startsWith("主题内容"))
+			{
+				return false;
 			}
 			Matcher m = pattern_start.matcher(exttext);
 			if( m.find())
@@ -78,24 +82,25 @@ public class ChineseContentBlocksFinder implements BoilerpipeFilter {
          */
 		boolean content_begin=false;
 		for (TextBlock tb : doc.getTextBlocks()) {
-			int blocktype=tb.getBlocktype();
-			if( blocktype == 1)
+			int blocktype = tb.getBlocktype();
+			if( blocktype == TextBlock.block_type_comment)
 			{
 				//this block is comment block, get the info from comment
 				final String exttext=tb.getExtText().toLowerCase().trim();
 				if( content_end(exttext))
 				{
 					content_begin=true;
+					doc.setDocLabel(DefaultLabels.chinese_beginer_finder);
 				}
 				continue;// next block
 			}
-			if( tb.hasLabel(DefaultLabels.INDICATES_END_OF_TEXT) )
+			if( tb.hasLabel(DefaultLabels.INDICATES_END_OF_TEXT) || tb.hasLabel(DefaultLabels.DEFINITE_END_OF_TEXT) )
 			{
 				return changes;
 			}
 			if(content_begin)
 			{
-				tb.addLabel(DefaultLabels.MIGHT_BE_CONTENT);
+				tb.addLabel(DefaultLabels.DEFINITE_BE_CONTENT);
 				changes = true;
 				continue;
 			}

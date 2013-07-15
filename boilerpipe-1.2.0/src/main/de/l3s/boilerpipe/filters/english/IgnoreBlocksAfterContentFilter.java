@@ -61,8 +61,12 @@ public final class IgnoreBlocksAfterContentFilter extends HeuristicFilterBase im
         for (Iterator<TextBlock> it = doc.getTextBlocks().iterator(); it.hasNext();) {
             TextBlock block = it.next();
 
-            final boolean endOfText = block
-                    .hasLabel(DefaultLabels.INDICATES_END_OF_TEXT);
+            if( block.hasLabel(DefaultLabels.DEFINITE_END_OF_TEXT) )
+            {
+            	block.setIsContent(false);
+            	continue;
+            }
+            final boolean endOfText = block.hasLabel(DefaultLabels.INDICATES_END_OF_TEXT);
             if (block.isContent()) {
                 numWords += getNumFullTextWords(block);
             }

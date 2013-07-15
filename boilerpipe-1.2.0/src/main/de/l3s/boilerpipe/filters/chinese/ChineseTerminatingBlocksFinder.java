@@ -53,7 +53,7 @@ public class ChineseTerminatingBlocksFinder implements BoilerpipeFilter {
 		
 		boolean end_of_content=false;
 		for (TextBlock tb : doc.getTextBlocks()) {
-			if( tb.getBlocktype() == 1)
+			if( tb.getBlocktype() == TextBlock.block_type_comment)
 			{
 				final String ext_text = tb.getExtText().toLowerCase().trim();
 				if( ext_text.length()> 3 && ext_text.length()<20)
@@ -61,6 +61,7 @@ public class ChineseTerminatingBlocksFinder implements BoilerpipeFilter {
 					Matcher mt= pattern.matcher(ext_text);
 					if( mt.find())
 					{
+						doc.setDocLabel(DefaultLabels.chinese_end_finder);
 						end_of_content=true;
 					}
 				}
@@ -68,7 +69,7 @@ public class ChineseTerminatingBlocksFinder implements BoilerpipeFilter {
 			}
 			if( end_of_content)
 			{
-				tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
+				tb.addLabel(DefaultLabels.DEFINITE_END_OF_TEXT);
 				changes=true;
 				continue;
 			}

@@ -17,6 +17,7 @@
  */
 package de.l3s.boilerpipe.sax;
 
+import java.sql.Time;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -209,6 +210,51 @@ public abstract class CommonTagActions {
         	return false;
         }
     };
+    
+    /**
+     * support img in content
+     */
+    public static final TagAction IMG = new TagAction() {
+
+        public boolean start(BoilerpipeHTMLContentHandler instance,
+                final String localName, final String qName,
+                final Attributes atts) {
+            if (instance.inIgnorableElement == 0) {
+            	String src=atts.getValue("src");
+            	String real_src=atts.getValue("real_src");
+            	if( real_src!=null && !real_src.equals(""))
+            	{
+            		src=real_src;
+            	}
+            	if( src != null && !src.equals(""))
+            	{
+                	String tmp=src;
+                	String resource_name = tmp.replace("/", "_").replace(":", "_");
+                    instance.addWhitespaceIfNecessary();
+                    instance.tokenBuffer
+                            .append("<img ").append("src=").append(resource_name).append(" />");
+                    instance.tokenBuffer.append(' ');
+                    instance.textBuffer
+                    .append("<img ").append("src=").append(resource_name).append(" />");
+                    instance.textBuffer.append(' ');
+
+                    instance.sbLastWasWhitespace = true;
+                    instance.resource.put(resource_name, src);         		
+            	}
+            }
+            return false;
+        }
+
+        public boolean end(BoilerpipeHTMLContentHandler instance,
+                final String localName, final String qName) {
+            return false;
+        }
+
+        public boolean changesTagLevel() {
+        	return false;
+        }
+    };
+
     private static final Pattern PAT_FONT_SIZE = Pattern
             .compile("([\\+\\-]?)([0-9])");
     

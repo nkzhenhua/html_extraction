@@ -30,9 +30,13 @@ public final class DefaultLabels {
     public static final String ARTICLE_METADATA = "de.l3s.boilerpipe/ARTICLE_METADATA";
     public static final String INDICATES_END_OF_TEXT = "de.l3s.boilerpipe/INDICATES_END_OF_TEXT";
     public static final String DEFINITE_END_OF_TEXT = "de.l3s.boilerpipe/DEFINITE_END_OF_TEXT";
+    public static final String DEFINITE_BE_CONTENT = "de.l3s.boilerpipe/DEFINITE_BE_CONTENT";
     public static final String MIGHT_BE_CONTENT = "de.l3s.boilerpipe/MIGHT_BE_CONTENT";
     public static final String STRICTLY_NOT_CONTENT = "de.l3s.boilerpipe/STRICTLY_NOT_CONTENT";
     public static final String HR = "de.l3s.boilerpipe/HR";
+    
+    public static final String chinese_beginer_finder = "de.l3s.boilerpipe/find_chinese_blog_beginer";
+    public static final String chinese_end_finder = "de.l3s.boilerpipe/find_chinese_blog_end";
     
     public static final String MARKUP_PREFIX = "<";
 }

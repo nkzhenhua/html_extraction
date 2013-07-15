@@ -24,6 +24,7 @@ import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * Classifies {@link TextBlock}s as content/not-content through rules that have
@@ -80,6 +81,10 @@ public class NumWordsRulesClassifier implements BoilerpipeFilter {
             final TextBlock next) {
         final boolean isContent;
 
+        if( curr.hasLabel(DefaultLabels.DEFINITE_BE_CONTENT))
+        {
+        	return curr.setIsContent(true);
+        }
         if (curr.getLinkDensity() <= 0.333333) {
             if (prev.getLinkDensity() <= 0.555556) {
                 if (curr.getNumWords() <= 16) {

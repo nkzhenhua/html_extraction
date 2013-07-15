@@ -18,6 +18,7 @@
 package de.l3s.boilerpipe.document;
 
 import java.util.BitSet;
+import java.util.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -34,10 +35,15 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
 public class TextBlock implements Cloneable {
     boolean isContent = false;
     private CharSequence text;
+    //the content of any other info exclude the content
     private CharSequence ext_text;
     Set<String> labels = null;
+    HashMap<String,String> resource = new HashMap<String,String>();
     
     int block_type=0;
+    public final static int block_type_text=0;
+    public final static int block_type_comment=1;
+    public final static int block_type_img=2;
 
     int offsetBlocksStart;
     int offsetBlocksEnd;
@@ -63,7 +69,14 @@ public class TextBlock implements Cloneable {
     public TextBlock(final String text) {
         this(text, null, 0,0,0,0,0);
     }
-    
+    public HashMap<String,String> getResouce()
+    {
+    	return resource;
+    }
+    public void setResource( HashMap<String,String> hm)
+    {
+    	resource=hm;
+    }
     public TextBlock(final String text, int block_type)
     {
         this.containedTextElements = EMPTY_BITSET;
@@ -75,7 +88,7 @@ public class TextBlock implements Cloneable {
         this.offsetBlocksEnd = 0;
         this.block_type=block_type;
         this.text="";
-    	if( block_type==1)
+    	if( block_type!=block_type_text)
     	{
             this.ext_text = text;
         }else
@@ -298,6 +311,11 @@ public class TextBlock implements Cloneable {
 		if(text != null && !(text instanceof String)) {
 			clone.text = new StringBuilder(text);
 		}
+		if(ext_text != null && !(ext_text instanceof String)) {
+			clone.ext_text = new StringBuilder(ext_text);
+		}
+		clone.block_type=block_type;
+		clone.resource=resource;
 		if(labels != null && !labels.isEmpty()) {
 			clone.labels = new HashSet<String>(labels);
 		}
