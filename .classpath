@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="boilerpipe-1.2.0/src/main"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/boilerpipe-1.2.0/lib/nekohtml-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/boilerpipe-1.2.0/lib/xerces-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/epublib/lib/epublib-core-3.1-complete.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/epublib/lib/kxml2-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/Rome/rome-fetcher_1.0/rome-fetcher-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/Rome/lib/rome-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/Rome/lib/jdom-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/zzh/Documents/mysrc/html_extraction/Rome/lib/jdom-1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
