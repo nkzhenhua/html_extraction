@@ -15,17 +15,54 @@ import de.l3s.boilerpipe.document.*;
 
 public class EpubGenerate {
 
-	private Vector<String> epub_source;
+	private HashMap<String,String> epub_source;
 	private String epub_title;
 	private String epub_author;
 
-	public EpubGenerate(Vector<String> urls, String title, String author) {
+	public EpubGenerate(HashMap<String,String> urls, String title, String author) {
 		epub_source = urls;
 		epub_title = title;
 		epub_author = author;
 	}
+	public EpubGenerate(String title, String author)
+	{
+		epub_source=new HashMap<String,String>();
+		epub_title = title;
+		epub_author = author;
+	}
+	public void addItem(String blog_item,String blog_title )
+	{
+		if( blog_item!=null && !blog_item.equals("") )
+		{
+			epub_source.put(blog_item, blog_title);
+		}
+	}
+    public String getHtmlText(TextDocument doc) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>")
+        .append(doc.getTitle()).append("</title></head><body>");
+        int text_length=0;
+        for (TextBlock block : doc.getTextBlocks()) {
+            if(!block.isContent()) {
+               continue;
+            }
+            text_length+=block.getText().trim().length();
+            if( block.getText().trim().length() > 1 && text_length <30)
+            {
+				sb.append("&nbsp;");
+				sb.append(block.getText());
+				sb.append("<&nbsp;");
+			} else {
+                sb.append("<p>");
+                sb.append(block.getText());
+                sb.append("</p>");
+            }
+        }
+        sb.append("</body></html>");
+        return sb.toString();
+    }
 
-	public boolean generateEpub(String outFileName) {
+	public boolean generateEpubBook(String outFileName) {
 		if (outFileName == null || outFileName.equals(""))
 			return false;
 
@@ -34,21 +71,23 @@ public class EpubGenerate {
 		book.getMetadata().addAuthor(new Author(epub_author, "zzh"));
 
 		int resource_id = 1;
-		for (String blog_url : epub_source) {
+		if( epub_source.size() ==0)
+			return false;
+		for (String blog_url : epub_source.keySet()) {
 			try {
 				URL url = new URL(blog_url);
 
 				String content = ChineseBlogExtractor.INSTANCE.getHtmlText(url);
 				TextDocument tdoc = ChineseBlogExtractor.INSTANCE.getDoc();
 				book.addSection(
-						tdoc.getTitle().equals("") ? "no_title" : tdoc
+						epub_source.get(blog_url) == null ? epub_source.get(blog_url) : tdoc
 								.getTitle(),
-						new Resource(content.getBytes("utf-8"), "html"
+						new Resource(getHtmlText(tdoc).getBytes("utf-8"), "html"
 								+ resource_id + ".html"));
 				resource_id++;
 				for (String rurl : tdoc.getAllResource().keySet()) {
 					String turl = tdoc.getAllResource().get(rurl);
-					book.addResource(addEpubResource(turl, rurl,resource_id++));
+					book.addResource(getEpubResource(turl, rurl,resource_id++));
 				}
 
 			} catch (Exception e) {
@@ -65,7 +104,7 @@ public class EpubGenerate {
 		return true;
 	}
 
-	public static Resource addEpubResource(String urlstr, String res_ref,
+	public static Resource getEpubResource(String urlstr, String res_ref,
 			int res_id) {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		String content_type = null;
@@ -109,7 +148,7 @@ public class EpubGenerate {
 			int id = 0;
 			for (String rurl : tdoc.getAllResource().keySet()) {
 				String turl = tdoc.getAllResource().get(rurl);
-				book.addResource(EpubGenerate.addEpubResource(turl, rurl, id));
+				book.addResource(EpubGenerate.getEpubResource(turl, rurl, id));
 				id++;
 			}
 			EpubWriter epubWriter = new EpubWriter();

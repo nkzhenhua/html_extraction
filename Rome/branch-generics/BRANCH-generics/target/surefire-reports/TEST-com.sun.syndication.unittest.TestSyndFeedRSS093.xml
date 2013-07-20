@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.026" errors="0" skipped="0" tests="19" name="com.sun.syndication.unittest.TestSyndFeedRSS093">
+<testsuite failures="0" time="0.031" errors="0" skipped="0" tests="19" name="com.sun.syndication.unittest.TestSyndFeedRSS093">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/zzh/Documents/Rome/branch-generics/BRANCH-generics"/>
+    <property name="user.dir" value="/Users/zzh/Documents/mysrc/html_extraction/Rome/branch-generics/BRANCH-generics"/>
     <property name="java.runtime.version" value="1.6.0_45-b06-451-11M4406"/>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
@@ -61,12 +61,12 @@
     <property name="mrj.version" value="1070.1.6.0_45-451"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testEntryPublishedDate"/>
-  <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testCopyright"/>
-  <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testLanguage"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testImageLink"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testEntryPublishedDate"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testCopyright"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testLanguage"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testImageLink"/>
   <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testImageUrl"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testPublishedDate"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testPublishedDate"/>
   <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testImageDescription"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testAuthor"/>
   <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testImageTitle"/>
@@ -74,10 +74,10 @@
   <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testEntryDescription"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testImage"/>
   <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testTitle"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testLink"/>
-  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testType"/>
+  <testcase time="0.003" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testLink"/>
+  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testType"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testPreserveWireFeed"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testEntryLink"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testEntryLink"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testEntryTitle"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS093" name="testDescription"/>
 </testsuite>

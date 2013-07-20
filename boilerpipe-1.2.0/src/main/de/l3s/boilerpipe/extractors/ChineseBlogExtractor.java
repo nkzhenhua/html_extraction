@@ -55,14 +55,13 @@ public final class ChineseBlogExtractor extends ExtractorBase {
                 | NumWordsRulesClassifier.INSTANCE.process(doc)
                 | IgnoreBlocksAfterContentFilter.DEFAULT_INSTANCE.process(doc)
 //                | BlockProximityFusion.MAX_DISTANCE_1.process(doc)
-//                | BoilerplateBlockFilter.INSTANCE.process(doc)
+                | BoilerplateBlockFilter.INSTANCE.process(doc)
 //                | BlockProximityFusion.MAX_DISTANCE_1_CONTENT_ONLY.process(doc)
-//                | KeepLargestBlockFilter.INSTANCE.process(doc)
                 | ExpandTitleToContentFilter.INSTANCE.process(doc)
                 ;
         //generate the active resource
         doc.generateResource();
-        System.out.println(doc.debugString());
+//        System.out.println(doc.debugString());
         return rev;
     }
 }

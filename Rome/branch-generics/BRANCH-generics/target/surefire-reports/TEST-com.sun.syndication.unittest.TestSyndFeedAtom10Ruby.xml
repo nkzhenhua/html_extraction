@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.005" errors="0" skipped="0" tests="3" name="com.sun.syndication.unittest.TestSyndFeedAtom10Ruby">
+<testsuite failures="0" time="0.006" errors="0" skipped="0" tests="3" name="com.sun.syndication.unittest.TestSyndFeedAtom10Ruby">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/zzh/Documents/Rome/branch-generics/BRANCH-generics"/>
+    <property name="user.dir" value="/Users/zzh/Documents/mysrc/html_extraction/Rome/branch-generics/BRANCH-generics"/>
     <property name="java.runtime.version" value="1.6.0_45-b06-451-11M4406"/>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
@@ -61,7 +61,7 @@
     <property name="mrj.version" value="1070.1.6.0_45-451"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedAtom10Ruby" name="testFeedURI"/>
+  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedAtom10Ruby" name="testFeedURI"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedAtom10Ruby" name="testEntry1URI"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedAtom10Ruby" name="testEntry2URI"/>
 </testsuite>

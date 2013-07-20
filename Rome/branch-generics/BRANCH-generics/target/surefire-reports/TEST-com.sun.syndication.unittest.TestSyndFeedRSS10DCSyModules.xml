@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.035" errors="0" skipped="0" tests="22" name="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules">
+<testsuite failures="0" time="0.04" errors="0" skipped="0" tests="22" name="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/zzh/Documents/Rome/branch-generics/BRANCH-generics"/>
+    <property name="user.dir" value="/Users/zzh/Documents/mysrc/html_extraction/Rome/branch-generics/BRANCH-generics"/>
     <property name="java.runtime.version" value="1.6.0_45-b06-451-11M4406"/>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
@@ -61,10 +61,10 @@
     <property name="mrj.version" value="1070.1.6.0_45-451"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testChannelDCModule"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testItemsDCModule"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testChannelSyModule"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testUri"/>
+  <testcase time="0.003" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testChannelDCModule"/>
+  <testcase time="0.003" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testItemsDCModule"/>
+  <testcase time="0.004" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testChannelSyModule"/>
+  <testcase time="0.003" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testUri"/>
   <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testEntryDescription"/>
   <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testEntryPublishedDate"/>
   <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testImage"/>
@@ -74,12 +74,12 @@
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testLink"/>
   <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testLanguage"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testImageLink"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testImageUrl"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testImageUrl"/>
   <testcase time="0" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testPublishedDate"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testEntryLink"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testEntryLink"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testEntryTitle"/>
-  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testDescription"/>
-  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testImageTitle"/>
+  <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testDescription"/>
+  <testcase time="0.001" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testImageTitle"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testEntries"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testType"/>
   <testcase time="0.002" classname="com.sun.syndication.unittest.TestSyndFeedRSS10DCSyModules" name="testPreserveWireFeed"/>

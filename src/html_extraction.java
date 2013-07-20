@@ -16,5 +16,16 @@ public class html_extraction {
 	    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");   
 	    temp_str=sdf.format(dt); 
 	    System.out.println(temp_str);
+	    String rss_feed="http://blog.sina.com.cn/rss/1412969690.xml";
+	    
+	    EpubGenerate epub=new EpubGenerate("EpubForRss—"+temp_str,"zzh");
+	    
+	   HashMap<String,String> bitems=RssExtraction.getBlogItem(rss_feed,true);
+	   for( String blog: bitems.keySet())
+	   {
+		   epub.addItem(blog,bitems.get(blog));
+	   }
+	   epub.generateEpubBook("/Users/zzh/test1.epub");
+	   System.out.println("done");
 	}
 }

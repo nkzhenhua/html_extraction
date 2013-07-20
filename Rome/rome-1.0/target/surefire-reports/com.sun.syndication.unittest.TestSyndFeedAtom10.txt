@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sun.syndication.unittest.TestSyndFeedAtom10
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
